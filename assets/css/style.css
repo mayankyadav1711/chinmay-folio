@@ -1254,10 +1254,13 @@ textarea.contact-input {
   /* CSS rules for mobile screens */
 
   .social-links a {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 10px;
   }
 
   .social-links a .fab {
-    font-size: 10px;
+    font-size: 2px;
+    line-height: 30px;
+
+}
 }
