@@ -38,7 +38,7 @@ body {
     text-shadow: -2px -1px 24px #f9d1d7;
     font-weight: 900;
     font-family: 'Darker Grotesque', sans-serif;
-margin-bottom: 0 !important;
+
 }
 
 .story {
@@ -60,9 +60,7 @@ margin-bottom: 0 !important;
 
 .underline {
 text-decoration: underline;
-text-decoration-color: #aa3636;
-background: #a0000095;
-color: aqua;
+text-decoration-color: #9c1f1f;
 }
 @media screen and (max-width: 450px) {
 
