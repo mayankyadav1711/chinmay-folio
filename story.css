@@ -20,12 +20,12 @@ a {
 }
 
 body {
-    background: #d2a54299;
+    background: #f9d1d7;
 }
 
 .main {
     margin: 5% auto;
-    background: #1a6eb3a1;
+    background: #f1b814;
     width: 80%;
     border-radius: 10px;
     align-items: center;
@@ -33,16 +33,16 @@ body {
 
 .title {
     font-size: 4rem;
-    color: #D7C0AE;
+    color: #ae530c;
     text-align: center;
-    text-shadow: -2px -1px 24px rgba(150, 126, 118, 1);
+    text-shadow: -2px -1px 24px #f9d1d7;
     font-weight: 900;
     font-family: 'Darker Grotesque', sans-serif;
-
+margin-bottom: 0 !important;
 }
 
 .story {
-    color: #ae530c;
+    color: #bd1e51;
     margin: 0 auto;
     margin-bottom: 2%;
     width: 80%;
@@ -54,19 +54,21 @@ body {
 .MyThoughts {
     font-family: 'Lobster', Cambria;
     font-weight: 900 ;
-    color: #843e09;
+    color: #8d1274;
     padding-bottom: 4% ;
 }
 
 .underline {
 text-decoration: underline;
-text-decoration-color: #000000;
+text-decoration-color: #aa3636;
+background: #a0000095;
+color: aqua;
 }
 @media screen and (max-width: 450px) {
 
     /* CSS rules for mobile screens */
     .story {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .title{
