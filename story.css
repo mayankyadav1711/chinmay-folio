@@ -1,3 +1,6 @@
+/*-----------------------------------*\
+    #RESET
+  \*-----------------------------------*/
 
 *,
 *::before,
@@ -15,7 +18,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,900&display=swap');
 body {
     background: #f9d1d7;
 }
@@ -45,7 +48,7 @@ body {
     width: 80%;
     font-size: 1.5rem;
     font-weight: 900;
-    font-family: 'Merriweather', serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .MyThoughts {
@@ -53,6 +56,8 @@ body {
     font-weight: 900 ;
     color: #8d1274;
     padding-bottom: 4% ;
+    letter-spacing: 3px; 
+    font-size: 2rem;
 }
 
 .underline {
@@ -70,4 +75,14 @@ text-decoration-color: #9c1f1f;
         font-size: 2rem;
     }
 
+    .MyThoughts{
+        font-size: 1rem;
+    }
+
+}
+
+
+
+.MyName{
+    color:#00008B;
 }
