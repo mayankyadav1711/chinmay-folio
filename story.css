@@ -20,30 +20,29 @@ a {
 }
 
 body {
-    background: #EEE3CB;
+    background: #d0bb8c;
 }
 
 .main {
     margin: 5% auto;
-    background: #9BABB8;
+    background: #9babb888;
     width: 80%;
     border-radius: 10px;
     align-items: center;
- }
+}
 
 .title {
     font-size: 4rem;
     color: #D7C0AE;
     text-align: center;
-    text-shadow: -2px -1px 24px rgba(150,126,118,1);
+    text-shadow: -2px -1px 24px rgba(150, 126, 118, 1);
     font-weight: 900;
     font-family: 'Darker Grotesque', sans-serif;
-    
+
 }
 
-.story{
-    color: #a25e47;
-    font-weight: 900;
+.story {
+    color: #ae530c;
     margin: 0 auto;
     margin-bottom: 2%;
     width: 80%;
@@ -52,7 +51,26 @@ body {
     font-family: 'Merriweather', serif;
 }
 
-.MyThoughts{
- font-family: 'Lobster', cursive;
-    ;
+.MyThoughts {
+    font-family: 'Lobster', Cambria;
+    font-weight: 900 ;
+    color: #843e09;
+    padding-bottom: 4% ;
+}
+
+.underline {
+text-decoration: underline;
+text-decoration-color: #000000;
+}
+@media screen and (max-width: 450px) {
+
+    /* CSS rules for mobile screens */
+    .story {
+        font-size: 1rem;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
 }
