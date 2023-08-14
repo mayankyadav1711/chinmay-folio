@@ -2,806 +2,360 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Primary Meta Tags -->
-    <title>Anshul Soni- Youngest Web Developer & Graphic Designer</title>
-    <meta name="title" content="Anshul Soni- Youngest Web Developer & Graphic Designer">
-    <meta name="description"
-        content="This is my personal website which have all the details about me,my skills,my projects,my blogs,my social handles and lot more. ">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://anshulsoni.tech/">
-    <meta property="og:title" content="Anshul Soni- Youngest Web Developer & Graphic Designer">
-    <meta property="og:description"
-        content="This is my personal website which have all the details about me,my skills,my projects,my blogs,my social handles and lot more. ">
-    <meta property="og:image" content="./assets/images/images.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://anshulsoni.tech/">
-    <meta property="twitter:title" content="Anshul Soni- Youngest Web Developer & Graphic Designer">
-    <meta property="twitter:description"
-        content="This is my personal website which have all the details about me,my skills,my projects,my blogs,my social handles and lot more. ">
-    <meta property="twitter:image" content="./assets/images/images.png">
-    <!-- 
-    - favicon
-  -->
-    <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!-- 
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-    <!-- 
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
-        rel="stylesheet">
-    <!-- thoughts line bold fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anshul Soni - Portfolio</title>
+  <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <!-- cdn of font awesome -->
+  <script src="https://kit.fontawesome.com/e650b26129.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body id="top">
+<body>
+  <!-- Scroll Top Button -->
+  <div class="scroll-top">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
+    </svg>
+  </div>
+  <!-- Navigation -->
+  <section id="navigation">
+    <div class="nav-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </div>
+  </section>
+  <div id="nav-content">
+    <div class="close-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </div>
+    <div class="wrapper">
+      <h2 class="section-heading">Menu</h2>
+      <nav>
+        <ul>
+          <li><a data-text="Home" href="./index.html#hero">Home</a></li>
+          <li><a data-text="About" href="./index.html#about">About</a></li>
+          <li><a data-text="Projects" href="./index.html#projects">Projects</a></li>
+          <li><a data-text="Testimonial" href="./index.html#testimonial">Testimonial</a></li>
+          <li><a data-text="Contact" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-    <!-- 
-    - #HEADER
-  -->
-
-    <header class="header" data-header>
-        <div class="container">
-
-            <a href="#">
-                <h1 class="logo">Anshul Soni</h1>
-            </a>
-
-            <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
-                <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-                <ion-icon name="close-outline" class="close-icon"></ion-icon>
-            </button>
-
-            <nav class="navbar container">
-                <ul class="navbar-list">
-
-                    <li>
-                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#about" class="navbar-link" data-nav-link>About</a>
-                    </li>
-
-                    <li>
-                        <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
-                    </li>
-
-                    <li>
-                        <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
-                    </li>
-
-                    <li>
-                        <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-                    </li>
-  <li>
-                        <a href="./mygears.html
-                        " class="navbar-link" data-nav-link>My Gears</a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-primary"><i class="fa-brands fa-github" style="color: #ffffff;"> </i>
-                            Follow me on GitHub</a>
-                    </li>
-
-                </ul>
-            </nav>
-
+  <!-- Hero section -->
+  <section id="hero">
+    <div class="container">
+      <div class="left">
+        <p class="subheading">I'm Anshul Soni</p>
+        <h2 class="heading">
+          <div class="wrapper"><span>Yongest</span></div>
+          <div class="wrapper"><span>Web developer</span></div>
+        </h2>
+        <p class="desc">I am 12 Year old 👦 | Youngest Web Developer & Graphic Designer 💻🎨 | Founder of CodeINBlogs 👨‍💻 | Completed 400+ exercises on FreeCodeCamp 💪 | Coder & designer by Passion 🔥 | 🌟 Proud core team member of GDG Ludhiana! | 7th Grade student of Noble International School 🎓 | Doing something Creative and Innovative.</p>
+        <div class="buttons">
+          <a href="#projects" class="primary-btn">See My Works</a>
+          <a href="#services">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </a>
         </div>
-    </header>
-
-
-
-
-
-    <main>
-        <article>
-
-            <!-- 
-        - #HERO
-      -->
-
-            <section class="hero" id="home">
-                <div class="container">
-
-                    <div class="hero-banner">
-
-                        <img src="./assets/images/hero-banner.jpg" width="800" height="864" loading="lazy"
-                            alt="Anshul's Photo" class="img-cover">
-
-                        <div class="elem elem-1">
-                            <p class="elem-title">12</p>
-
-                            <p class="elem-text">Years Old Coder</p>
-                        </div>
-
-                        <div class="elem elem-2">
-                            <p class="elem-title">20+</p>
-
-                            <p class="elem-text">Projects Completed</p>
-                        </div>
-
-                        <div class="elem elem-3">
-                            <ion-icon name="trophy"></ion-icon>
-                        </div>
-
-                        <img src="./assets/images/rotate-img.png" width="169" height="172"
-                            alt="Creative Developer from India" class="rotate-img">
-
-                    </div>
-
-                    <div class="hero-content">
-
-                        <h2 class="hero-title">
-                            <span>Hello I'm</span>
-                            <strong>Anshul soni</strong> Web Developer And Graphic Designer
-                        </h2>
-
-                        <p class="hero-text">
-                            I am 12 Year old 👦 | Youngest Web Developer & Graphic Designer 💻🎨 | Founder of
-                            CodeINBlogs 👨‍💻 | Completed 400+ exercises on FreeCodeCamp 💪 | Coder & designer by
-                            Passion 🔥 | 🌟 Proud core team member of GDG Ludhiana! | 7th Grade student of Noble
-                            International School 🎓 | Doing something Creative and Innovative 💡. </p>
-
-                        <div class="btn-group">
-                            <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
-
-                            <a href="https://codeinblogs.co" class="btn btn-primary blue">Explore CodeINBlogs</a>
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- 
-        - #ABOUT
-      -->
-
-            <section class="section about" id="about">
-                <div class="container">
-
-                    <figure class="about-banner">
-
-                        <img src="./assets/images/about-pic.jpg" width="800" height="652" loading="lazy"
-                            alt="Anshul's Photo" class="img-cover about-pic">
-
-                        <img src="./assets/images/absolute-image.jpg" width="800" height="717" loading="lazy"
-                            alt="Anshul's Photo" class="abs-img">
-
-                        <div class="abs-icon abs-icon-1">
-                            <ion-icon name="logo-css3"></ion-icon>
-                        </div>
-
-                        <div class="abs-icon abs-icon-2">
-                            <ion-icon name="logo-javascript"></ion-icon>
-                        </div>
-
-                        <div class="abs-icon abs-icon-3">
-                            <ion-icon name="logo-html5"></ion-icon>
-                        </div>
-
-                    </figure>
-
-                    <div class="about-content">
-
-                        <p class="section-subtitle">I'm a Developer</p>
-
-                        <h3 class="h2 section-title">Passionate Front-End Developer,Building Digital Experiences That
-                            Inspire.</h3>
-
-                        <p class="section-text">
-                            Hi there! I'm Anshul Soni, a young and talented front-end developer with a passion for
-                            coding. I started working with websites when I was just 11 years old, and I've been hooked
-                            ever since. I'm the founder of CodeINBlogs, a non-profit organization that provides an
-                            easy-to-use platform for bloggers to publish their articles on various topics.
-
-
-
-
-                        </p>
-
-                        <p class="section-text">
-                            Currently, I'm a 7th grader at Noble International School, and I have eight months of
-                            professional experience in front-end development. Building new things is my favorite thing
-                            to do, and it was my love for coding that inspired me to create CodeINBlogs. 
-                        </p>
-
-
-                        <p class="section-text">
-                            During my free time, I enjoy creating content on LinkedIn to share my thoughts and ideas
-                            with fellow coding enthusiasts. I'm always open to meeting new people and collaborating on
-                            projects, so if you're interested in working together, I'd be delighted to chat with you!
-
-                        </p>
-                        <a href="./story.html" class="btn btn-primary blue">See My Story
-                        </a>
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
-
-
-            <!-- 
-                    - #SKILLS
-                  -->
-
-            <section class="section skills" id="skills">
-                <div class="container">
-
-                    <p class="section-subtitle">My Skills</p>
-
-                    <h2 class="h2 section-title">I Develop Skills Regularly</h2>
-
-                    <p class="section-text">
-                        You bring the vision, I bring the skills - a full-stack web developer with design and animation
-                        expertise, ready to elevate your online presence! </p>
-
-                    <ul class="skills-list">
-
-                        <li class="skills-item">
-                            <div class="wrapper" style="width: 95%">
-                                <h3 class=" skills-title">HTML</h3>
-
-                                <data class="skills-data" value="95">95%</data>
-                            </div>
-
-                            <div class="skills-progress-box">
-                                <div class="skills-progress" style="width: 95%"></div>
-                            </div>
-                        </li>
-
-                        <li class="skills-item">
-                            <div class="wrapper" style="width: 80%">
-                                <h3 class="skills-title">CSS</h3>
-
-                                <data class="skills-data" value="80">80%</data>
-                            </div>
-
-                            <div class="skills-progress-box">
-                                <div class="skills-progress" style="width: 80%"></div>
-                            </div>
-                        </li>
-
-                        <li class="skills-item">
-                            <div class="wrapper" style="width: 85%">
-                                <h3 class="skills-title">BootStrap</h3>
-
-                                <data class="skills-data" value="85">85%</data>
-                            </div>
-
-                            <div class="skills-progress-box">
-                                <div class="skills-progress" style="width: 95%"></div>
-                            </div>
-                        </li>
-
-                        <li class="skills-item">
-                            <div class="wrapper" style="width: 80%">
-                                <h3 class="skills-title">JavaScript</h3>
-
-                                <data class="skills-data" value="80">80%</data>
-                            </div>
-
-                            <div class="skills-progress-box">
-                                <div class="skills-progress" style="width: 80%"></div>
-                            </div>
-                        </li>
-
-                        <li class="skills-item">
-                            <div class="wrapper" style="width: 30%">
-                                <h3 class="skills-title">Node.js(learning) </h3>
-
-                                <data class="skills-data" value="30">30%</data>
-                            </div>
-
-                            <div class="skills-progress-box">
-                                <div class="skills-progress" style="width: 30%"></div>
-                            </div>
-                        </li>
-
-                        <li class="skills-item">
-                            <div class="wrapper" style="width: 95%">
-                                <h3 class="skills-title">Git & GitHub</h3>
-
-                                <data class="skills-data" value="95">95%</data>
-                            </div>
-
-                            <div class="skills-progress-box">
-                                <div class="skills-progress" style="width: 95%"></div>
-                            </div>
-                        </li>
-
-
-                        <li class="skills-item">
-                            <div class="wrapper" style="width: 85%">
-                                <h3 class="skills-title">Google Firebase</h3>
-
-                                <data class="skills-data" value="85">85%</data>
-                            </div>
-
-                            <div class="skills-progress-box">
-                                <div class="skills-progress" style="width: 85%"></div>
-                            </div>
-                        </li>
-
-                        <li class="skills-item">
-                            <div class="wrapper" style="width: 90%">
-                                <h3 class="skills-title">Figma</h3>
-
-                                <data class="skills-data" value="90">90%</data>
-                            </div>
-
-                            <div class="skills-progress-box">
-                                <div class="skills-progress" style="width: 90%"></div>
-                            </div>
-                        </li>
-
-
-                        <li class="skills-item">
-                            <div class="wrapper" style="width: 90%">
-                                <h3 class="skills-title">Canva</h3>
-
-                                <data class="skills-data" value="90">90%</data>
-                            </div>
-
-                            <div class="skills-progress-box">
-                                <div class="skills-progress" style="width: 90%"></div>
-                            </div>
-                        </li>
-
-                        <li class="skills-item">
-                            <div class="wrapper" style="width: 60%">
-                                <h3 class="skills-title">MS Office</h3>
-
-                                <data class="skills-data" value="60">60%</data>
-                            </div>
-
-                            <div class="skills-progress-box">
-                                <div class="skills-progress" style="width: 60%"></div>
-                            </div>
-                        </li>
-
-
-                    </ul>
-
-                </div>
-            </section>
-
-
-
-
-
-
-            <!-- 
-        - #PORTFOLIO        
-      -->
-
-            <section class="section portfolio" id="portfolio">
-                <div class="container">
-
-                    <p class="section-subtitle">Portfolio</p>
-
-                    <h2 class="h2 section-title">My Amazing Works</h2>
-
-                    <p class="section-text">
-                        My Portfolio of Web Development and Graphic Designing
-
-                    </p>
-
-                    <ul class="portfolio-list">
-                       
-
-                        <li>
-                            <a href="#" class="portfolio-card"
-                                style="background-image: url('https://anshulsoni.tech/img/projects/web%20dev/bookmark-website_modern-landing-page.png')">
-                                <div class="card-content">
-
-                                    <p class="card-subtitle">web dev</p>
-
-                                    <h3 class="h3 card-title" style="color:rgba(0, 0, 0, 0.938);; font-weight:700 ;">Bookmark WebPage</h3>
-
-                                    <span class="btn-link">
-                                        <span style="background-color:rgba(0, 0, 0, 0.603);">View Project</span>
-
-                                        <ion-icon name="arrow-forward"></ion-icon>
-                                    </span>
-                                    <span class="btn-link" >
-                                        <span style="background-color:rgba(0, 0, 0, 0.603);">View source code</span>
-
-                                        <ion-icon name="arrow-forward"></ion-icon>
-                                    </span>
-
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="portfolio-card"
-                                style="background-image: url('./assets/images/projects/CodeINBlogs.png')">
-                                <div class="card-content">
-
-                                    <p class="card-subtitle">web dev</p>
-
-                                    <h3 class="h3 card-title" >CodeINBlogs Platform</h3>
-
-                                    <span class="btn-link">
-                                        <span style="background-color:rgba(0, 0, 0, 0.603);">View Project</span>
-
-                                        <ion-icon name="arrow-forward"></ion-icon>
-                                    </span>
-                                    <span class="btn-link">
-                                        <span style="background-color:rgba(0, 0, 0, 0.603);">View source code</span>
-
-                                        <ion-icon name="arrow-forward"></ion-icon>
-                                    </span>
-
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="portfolio-card"
-                                style="background-image: url('./assets/images/projects/cycle-website.png')">
-                                <div class="card-content">
-
-                                    <p class="card-subtitle">web dev</p>
-
-                                    <h3 class="h3 card-title" style="color:rgba(0, 0, 0, 0.938);; font-weight:700 ;">Cycle Website</h3>
-
-                                    <span class="btn-link">
-                                        <span style="background-color:rgba(0, 0, 0, 0.603);">View Project</span>
-
-                                        <ion-icon name="arrow-forward"></ion-icon>
-                                    </span>
-                                    <span class="btn-link">
-                                        <span style="background-color:rgba(0, 0, 0, 0.603);">View source code</span>
-
-                                        <ion-icon name="arrow-forward"></ion-icon>
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="portfolio-card"
-                                style="background-image: url('./assets/images/projects/banking-website.png')">
-                                <div class="card-content">
-
-                                    <p class="card-subtitle">Web Dev</p>
-
-                                    <h3 class="h3 card-title" style="color:rgba(255, 255, 255, 0.938);; font-weight:700 ;">Banking App Landing Page</h3>
-
-                                    <span class="btn-link">
-                                        <span style="background-color:rgba(0, 0, 0, 0.603);">View Project</span>
-
-                                        <ion-icon name="arrow-forward"></ion-icon>
-                                    </span>
-                                    <span class="btn-link">
-                                        <span style="background-color:rgba(0, 0, 0, 0.603);">View source code</span>
-
-                                        <ion-icon name="arrow-forward"></ion-icon>
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="portfolio-card"
-                                style="background-image: url('./assets/images/projects/omnifood-clone.png')">
-                                <div class="card-content">
-
-                                    <p class="card-subtitle">Web Dev</p>
-
-
-                                    <h3 class="h3 card-title" style="color:rgba(0, 0, 0, 0.938); font-weight:700 ;"><span style="background: wheat;">Omnifood landingpage Clone </span></h3>
-                                    <span class="btn-link">
-                                        <span style="background-color:rgba(0, 0, 0, 0.603);">View Project</span>
-
-                                        <ion-icon name="arrow-forward"></ion-icon>
-                                    </span>
-                                    <span class="btn-link">
-                                        <span style="background-color:rgba(0, 0, 0, 0.603);">View source code</span>
-
-                                        <ion-icon name="arrow-forward"></ion-icon>
-                                    </span>
-                                </div>
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section>
-
-
-            <!-- 
-        - #BLOG
-      -->
-
-            <section class="section blog" id="blog">
-                <div class="container">
-
-                    <p class="section-subtitle">Latest News</p>
-
-                    <h2 class="h2 section-title">Checkout My Recent Blogs</h2>
-
-                    <p class="section-text">
-                        These are my recent blogs. I like to write some blogs which helps my audience. </p>
-
-                    <ul class="blog-list">
-
-                        <li>
-                            <div class="blog-card">
-
-                                <figure class="card-banner">
-                                    <a href="#">
-                                        <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/04/What-is-Machine-Learning.jpg"
-                                            width="1181" height="843" loading="lazy"
-                                            alt="What’s Machine Learning Done in the Last 20 Years?" class="img-cover">
-                                    </a>
-                                </figure>
-
-                                <a href="#" class="card-tag">Machine Learning</a>
-
-                                <h3 class="card-title">
-                                    <a href="#">What’s Machine Learning Done in the Last 20 Years?</a>
-                                </h3>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="blog-card">
-
-                                <figure class="card-banner">
-                                    <a href="#">
-                                        <img src="https://cdn.dribbble.com/users/518545/screenshots/14382301/media/f361c5951fbda0a680fae5ea41d94f8b.png?compress=1&resize=400x300"
-                                            width="1181" height="843" loading="lazy" alt="COMPILER VS INTERPRETER"
-                                            class="img-cover">
-                                    </a>
-                                </figure>
-
-                                <a href="#" class="card-tag">Web Development</a>
-
-                                <h3 class="card-title">
-                                    <a href="#">COMPILER VS INTERPRETER</a>
-                                </h3>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="blog-card">
-
-                                <figure class="card-banner">
-                                    <a href="#">
-                                        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1685776680684/016db584-fae2-4d48-a164-4ad8abbeec1a.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
-                                            width="1181" height="843" loading="lazy" alt="JavaScript ES2021 Features You Need to Know
-                                            " class="img-cover">
-                                    </a>
-                                </figure>
-
-                                <a href="#" class="card-tag">Web Development</a>
-
-                                <h3 class="card-title">
-                                    <a href="#">JavaScript ES2021 Features You Need to Know
-                                    </a>
-                                </h3>
-
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </section>
-
-
-            <!-- 
-        - #CONTACT
-      -->
-
-            <section class="section contact" id="contact">
-                <div class="container">
-
-                    <div class="contact-card">
-
-                        <p class="card-subtitle">Don't be shy</p>
-
-                        <h2 class="h2 section-title">Drop Me a Line</h2>
-
-                        <div class="wrapper">
-
-                            <form action="" class="contact-form">
-
-                                <input type="text" name="name" placeholder="Name" required class="contact-input">
-
-                                <input type="email" name="email" placeholder="Email" required class="contact-input">
-
-                                <textarea name="message" placeholder="Message" required
-                                    class="contact-input"></textarea>
-
-                                <button type="submit" class="btn-submit">Submit Message</button>
-
-                            </form>
-
-                            <ul class="contact-list">
-
-                                <li class="contact-item">
-
-                                    <div class="contact-icon">
-                                        <ion-icon name="location"></ion-icon>
-                                    </div>
-
-                                    <div>
-                                        <h3 class="contact-item-title">Address</h3>
-
-                                        <address class="contact-item-link">
-                                            Shastri Nagar,Bhilwara,Rajasthan, <img style="height:10px;"
-                                                src="https://img.uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/india-flag-icon.svg"
-                                                alt=""> </address>
-                                    </div>
-
-                                </li>
-
-                                <li class="contact-item">
-
-                                    <div class="contact-icon">
-                                        <ion-icon name="mail"></ion-icon>
-                                    </div>
-
-                                    <div>
-                                        <h3 class="contact-item-title">Email</h3>
-
-                                        <a href="mailto:anshulsoni2022@gmail"
-                                            class="contact-item-link">anshulsoni2022@gmail.com</a>
-                                    </div>
-
-                                </li>
-
-                                <li class="contact-item">
-
-                                    <div class="contact-icon">
-                                        <ion-icon name="medical-outline"></ion-icon>
-                                    </div>
-
-                                    <div>
-                                        <h3 class="contact-item-title">Contact me via Telegram</h3>
-
-                                        <a href="https://tttttt.me/Anshulsoni2010" class="contact-item-link">My id-
-                                            @Anshulsoni2010 </a>
-                                    </div>
-
-                                </li>
-
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
-            <div class="my_thoughts">
-
-                ❝Age is just a number, creativity has no bounds.❞
-
+      </div>
+      <div class="right">
+        <img src="./image/profile.jpg" alt="">
+      </div>
+    </div>
+  </section>
+<!-- mobile device compponents -->
+<br class="mobile"> <br class="mobile"> <br class="mobile"> <br class="mobile">
+  <!-- services Section -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-heading" data-outline="Services">Services</h2>
+      <div class="all-items">
+        <div class="item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="item-heading">Web Design</h3>
+          <p class="item-desc">I build up the high performance website with blazing fast speed. Website with high
+            performance can lead the visitor more. </p>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <h3 class="item-heading">UI/UX</h3>
+          <p class="item-desc">I do ui/ux design for the website that assists website to get an outstanding look. Unique
+            design creates an unique personality for websites.</p>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
+            </svg>
+          </div>
+          <h3 class="item-heading">Graphic Designing</h3>
+          <p class="item-desc">Transforming your vision into visually stunning reality - with expert graphic design services tailored to your unique needs!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section id="testimonial">
+    <div class="container">
+      <h1 class="section-heading" data-outline="Testimonial">Testimonial</h1>
+      <div class="all-items">
+        <div class="item">
+          <div class="img">
+            <img src="https://codeinblogs.co/assests/images/avatarman.png" alt="">
+          </div>
+          <h3 class="testimonial-heading"> LinkedIn Connection</h3>
+          <p class="testimonial-sub-heading">Graphic Design</p>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+            </svg>
+          </div>
+          <p class="testimonial-desc">
+            Worked with an incredible graphic designer on a branding project - thrilled with the results. Their creativity and ability to bring my ideas to life surpassed expectations. Consistently delivered outstanding work from logo to marketing materials. Professional, responsive, and committed to timely delivery. Grateful for finding such a talented designer.</p>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="https://codeinblogs.co/assests/images/avatarman.png" alt="">
+          </div>
+          <h3 class="testimonial-heading">Community Member</h3>
+          <p class="testimonial-sub-heading">Web Design</p>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+            </svg>
+          </div>
+          <p class="testimonial-desc">Incredible web design by this young talent! Captured my brand's essence perfectly. Visually stunning and user-friendly site. Impressive attention to detail and seamless user experience. Highly recommend their web design services for a standout online presence.</p>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="https://codeinblogs.co/assests/images/avatarman.png" alt="">
+          </div>
+          <h3 class="testimonial-heading">LinkedIn Connection</h3>
+          <p class="testimonial-sub-heading">Web Dev</p>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+            </svg>
+          </div>
+          <p class="testimonial-desc">
+            Collaborating with this young prodigy on web development was a pleasure. Unmatched attention to detail, creativity, and technical expertise. Exceeded my expectations with a seamless blend of aesthetics and functionality. Highly recommend their top-notch web development services.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- stats Section -->
+  <section id="stats">
+    <div class="container">
+      <h2 class="section-heading" data-outline="Stats">Stats</h2>
+      <div class="all-items">
+        <div class="item">
+          <h2 class="number">30+</h2>
+          <h3 class="stats-sub-heading">Projects done</h3>
+          <p>I worked on more than 50+ projects. I know how to make things fascinating and eye-catching. Making high
+            performance website is always a sign of mine.</p>
+        </div>
+        <div class="item">
+          <h2 class="number">5+</h2>
+          <h3 class="stats-sub-heading">Happy clients</h3>
+          <p>I worked with more than 5 clients. Client satisfaction is my main priority. I generally attempt to
+            complete the work
+            before the deadline.</p>
+        </div>
+        <div class="item">
+          <h2 class="number">1+</h2>
+          <h3 class="stats-sub-heading">Years experience</h3>
+          <p>I have 1 year of experience in this stuff and I started this all stuff when I was 11 y/o and currently I am 13 year old coder.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END Stats Section -->
+
+
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-heading" data-outline="about">About</h2>
+      <div class="wrapper">
+        <div class="left">
+          <div class="card">
+            <div class="img">
+              <img src="./image/absolute-image.jpg" alt="">
+            </div>
+            <p class="card-desc">I am 12 Year old 👦 | Youngest Web Developer & Graphic Designer 💻🎨 | Founder of CodeINBlogs 👨‍💻 | Completed 400+ exercises on FreeCodeCamp 💪 | Coder & designer by Passion 🔥 | 🌟 Proud core team member of GDG Ludhiana! | 7th Grade student of Noble International School 🎓 | Doing something Creative and Innovative.</p>
+            <h3 class="card-name">Anshul Soni</h3>
+            <p class="card-sub-title">Founder of CodeINBlogs</p>
+          </div>
+        </div>
+        <div class="right">
+          <p class="subheading">Hi! This is Anshul</p>
+          <h2 class="slogan">Web Developer & Graphic Designer</h2>
+          <p class="right-text"> I'm Anshul Soni, a 12-year-old web developer and graphic designer. Started coding at 11 and got hooked on tech's magic. Juggling studies at Noble International School and my tech passion. Founder of CodeINBlogs—where coders unite to blog and solve. Love making YouTube videos and rocking with Google Developer Groups. Open source? I'm in! 12+ months of web dev experience, ready for new projects. Let's team up—reach me at anshulsoni2022@gmail.com. Cheers to coding adventures!
+          </p>
+          <div class="buttons">
+            <a href="https://github.com/anshulsoni2010" class="primary-btn" download=""><i class="fa-brands fa-github"></i>
+              Checkout My GitHub</a>
+            <a href="./contact.html" class="primary-btn outline">Hire Me <i class="fa-solid fa-right-to-bracket"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- projects -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-heading" data-outline="Projects">Projects</h2>
+      <div class="all-items">
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./image/project-1.png" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Sumit Gupta Classes</h2>
+            <h3 class="project-sub-title">Maths Coaching Website</h3>
+            <p class="project-desc">I made this website for a my Client. This application is truly Amazing.In this website I showcased all about the Maths Coaching from about us to courses to admissions and a many more</p>
+            <div class="buttons">
+              <a href="https://github.com/anshulsoni2010/SumitGuptaClasses" class="primary-btn"><i class="fa-brands fa-github"></i> GitHub Code</a>
+              <a href="https://anshulsoni2010.github.io/SumitGuptaClasses/" class="primary-btn outline external-link"> <span>Preview</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
             </div>
 
-        </article>
-    </main>
-
-
-
-
-
-    <!-- 
-    - #FOOTER
-  -->
-
-    <footer class="footer">
-        <div class="container">
-
-            <p class="copyright">
-                &copy; 2023 <a href="#" class="copyright-link">Anshul Soni</a>. All Rights Reseverd
-            </p>
-
-            <ul class="footer-list">
-                <li>
-                    <b><a href="#" style="color:#ffffff">Developed & Designed by Anshul Soni</a></b>
-                </li>
-
-
-            </ul>
-
-
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./image/project-2.jpg" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Omnifood Clone </h2>
+            <h3 class="project-sub-title">Clone Page of Omnifood 
+            </h3>
+            <p class="project-desc">I made a something same website like omnifood. I used HTML CSS JS as I wants to make landing page . I taken inspiration from other website like Zomato , Swiggy etc etc.</p>
+            <div class="buttons">
+              <a href="https://github.com/anshulsoni2010/omnifood-clone" class="primary-btn"><i class="fa-brands fa-github"></i> GitHub Code</a>
+              <a href="https://omnifood-clone-as.netlify.app/" class="primary-btn outline external-link"> <span>Preview</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./image/project-3.jpg" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">CodeINBlogs</h2>
+            <h3 class="project-sub-title">Blogging and Community Website</h3>
+            <p class="project-desc">CodeINBlogs is the platform for Blogger and coders. It's my NGO which I am running for developers. Currently we have 600+ members of Community.<p>
+            <div class="buttons">
+              <a href="https://github.com/codeinblogs-as/CodeINBlogs" class="primary-btn"><i class="fa-brands fa-github"></i> GitHub Code</a>
+              <a href="https://codeinblogs.co" class="primary-btn outline external-link"> <span>Preview</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <ul class="social-list">
-            <li>
-                <a href="https://github.com/anshulsoni2010" class="social-link">
-                    <i class="fa fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/anshulsoni2010/" class="social-link">
-                    <i class="fa fa-instagram"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@codewithanshul" class="social-link">
-                    <i class="fa fa-youtube-play"></i>
-                </a>
-            </li>
+       <center> <button class="github-btn" role="button"><i class="fa-brands fa-square-github github-btn-icon"></i>  All Projects</button></center>
 
-            <li>
-                <a href="
-                https://twitter.com/AnshulSoni2010" class="social-link">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer Section -->
+  <section id="footer">
+    <div class="container">
+      <footer>
+        <div class="col-1">
+          <div class="logo"><a href="#">
+              <img src="./image/light-logo.svg" alt="">
+            </a></div>
+          <p>Age, merely a digit in life's ledger, contrasts the unbridled realm of creativity, where boundaries cease to exist. Let your numbered days empower the limitless expanse of your imagination, defying the constraints of time.
 
+          </p>
+        </div>
+        <div class="col-2">
+          <h2 class="column-heading">Links</h2>
+          <ul>
+            <li><a href="./index.html#home">Home</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html#Project">Project</a></li>
+            <li><a href="./index.html#testimonial">Testimonial</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h2 class="column-heading">Contact Info</h2>
+          <ul>
+            <li><a href="#">anshulsoni2022@gmail.com</a></li>
+            <li><a href="#">+91 7357022722</a></li>
+            <li><a href="#">India</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h2 class="column-heading">Social </h2>
+          <ul>
+            <li><center><a href="https://github.com/anshulsoni2010"><i class="fa-brands fa-square-github"></i></a></center></li>
+            <li><center><a href="#"><i class="fa-brands fa-twitter"></i></a></center></li>
+            <li><center><a href="#"><i class="fa-brands fa-instagram"></i></a></center></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </section>
+  <section id="copyright">
+    <div class="container">
+      <p> &copy; Copyright 2023 Anshul Soni. All right Reserved</p>
+    </div>
+  </section>
 
-
-
-    <!-- 
-    - #BACK TO TOP
-  -->
-
-    <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
-
-
-
-
-
-    <!-- 
-    - custom js link
-  -->
-    <script src="./assets/js/script.js"></script>
-
-    <!-- 
-    - ionicon link
-  -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-
+  <script src="./app.js"></script>
 </body>
 
 </html>
