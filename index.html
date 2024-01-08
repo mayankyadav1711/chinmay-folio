@@ -2,360 +2,753 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anshul Soni - Portfolio</title>
-  <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <!-- cdn of font awesome -->
-  <script src="https://kit.fontawesome.com/e650b26129.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#a789d4">
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title> Anshul's Portfolio </title>
+
+    <link rel="stylesheet" type="text/css" href="node_modules/all-animation/dist/all-animation.min.css" />
 </head>
 
 <body>
-  <!-- Scroll Top Button -->
-  <div class="scroll-top">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
-    </svg>
-  </div>
-  <!-- Navigation -->
-  <section id="navigation">
-    <div class="nav-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </div>
-  </section>
-  <div id="nav-content">
-    <div class="close-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </div>
-    <div class="wrapper">
-      <h2 class="section-heading">Menu</h2>
-      <nav>
-        <ul>
-          <li><a data-text="Home" href="./index.html#hero">Home</a></li>
-          <li><a data-text="About" href="./index.html#about">About</a></li>
-          <li><a data-text="Projects" href="./index.html#projects">Projects</a></li>
-          <li><a data-text="Testimonial" href="./index.html#testimonial">Testimonial</a></li>
-          <li><a data-text="Contact" href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">{PERSONAL PAGE}</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
 
-  <!-- Hero section -->
-  <section id="hero">
-    <div class="container">
-      <div class="left">
-        <p class="subheading">I'm Anshul Soni</p>
-        <h2 class="heading">
-          <div class="wrapper"><span>Youngest</span></div>
-          <div class="wrapper"><span>Web developer</span></div>
-        </h2>
-        <p class="desc">I am 12 Year old 👦 | Youngest Web Developer & Graphic Designer 💻🎨 | Founder of CodeINBlogs 👨‍💻 | Completed 400+ exercises on FreeCodeCamp 💪 | Coder & designer by Passion 🔥 | 🌟 Proud core team member of GDG Ludhiana! | 7th Grade student of Noble International School 🎓 | Doing something Creative and Innovative.</p>
-        <div class="buttons">
-          <a href="#projects" class="primary-btn">See My Works</a>
-          <a href="#services">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="right">
-        <img src="./image/profile.jpg" alt="">
-      </div>
-    </div>
-  </section>
-<!-- mobile device compponents -->
-<br class="mobile"> <br class="mobile"> <br class="mobile"> <br class="mobile">
-  <!-- services Section -->
-  <section id="services">
-    <div class="container">
-      <h2 class="section-heading" data-outline="Services">Services</h2>
-      <div class="all-items">
-        <div class="item">
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-          </div>
-          <h3 class="item-heading">Web Design</h3>
-          <p class="item-desc">I build up the high performance website with blazing fast speed. Website with high
-            performance can lead the visitor more. </p>
-        </div>
-        <div class="item">
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-            </svg>
-          </div>
-          <h3 class="item-heading">UI/UX</h3>
-          <p class="item-desc">I do ui/ux design for the website that assists website to get an outstanding look. Unique
-            design creates an unique personality for websites.</p>
-        </div>
-        <div class="item">
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z" />
-            </svg>
-          </div>
-          <h3 class="item-heading">Graphic Designing</h3>
-          <p class="item-desc">Transforming your vision into visually stunning reality - with expert graphic design services tailored to your unique needs!</p>
-        </div>
-      </div>
-    </div>
-  </section>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
 
-  <!-- Testimonial Section -->
-  <section id="testimonial">
-    <div class="container">
-      <h1 class="section-heading" data-outline="Testimonial">Testimonial</h1>
-      <div class="all-items">
-        <div class="item">
-          <div class="img">
-            <img src="https://codeinblogs.co/assests/images/avatarman.png" alt="">
-          </div>
-          <h3 class="testimonial-heading"> LinkedIn Connection</h3>
-          <p class="testimonial-sub-heading">Graphic Design</p>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-            </svg>
-          </div>
-          <p class="testimonial-desc">
-            Worked with an incredible graphic designer on a branding project - thrilled with the results. Their creativity and ability to bring my ideas to life surpassed expectations. Consistently delivered outstanding work from logo to marketing materials. Professional, responsive, and committed to timely delivery. Grateful for finding such a talented designer.</p>
-        </div>
-        <div class="item">
-          <div class="img">
-            <img src="https://codeinblogs.co/assests/images/avatarman.png" alt="">
-          </div>
-          <h3 class="testimonial-heading">Community Member</h3>
-          <p class="testimonial-sub-heading">Web Design</p>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-            </svg>
-          </div>
-          <p class="testimonial-desc">Incredible web design by this young talent! Captured my brand's essence perfectly. Visually stunning and user-friendly site. Impressive attention to detail and seamless user experience. Highly recommend their web design services for a standout online presence.</p>
-        </div>
-        <div class="item">
-          <div class="img">
-            <img src="https://codeinblogs.co/assests/images/avatarman.png" alt="">
-          </div>
-          <h3 class="testimonial-heading">LinkedIn Connection</h3>
-          <p class="testimonial-sub-heading">Web Dev</p>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-            </svg>
-          </div>
-          <p class="testimonial-desc">
-            Collaborating with this young prodigy on web development was a pleasure. Unmatched attention to detail, creativity, and technical expertise. Exceeded my expectations with a seamless blend of aesthetics and functionality. Highly recommend their top-notch web development services.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
 
-  <!-- stats Section -->
-  <section id="stats">
-    <div class="container">
-      <h2 class="section-heading" data-outline="Stats">Stats</h2>
-      <div class="all-items">
-        <div class="item">
-          <h2 class="number">30+</h2>
-          <h3 class="stats-sub-heading">Projects done</h3>
-          <p>I worked on more than 50+ projects. I know how to make things fascinating and eye-catching. Making high
-            performance website is always a sign of mine.</p>
-        </div>
-        <div class="item">
-          <h2 class="number">5+</h2>
-          <h3 class="stats-sub-heading">Happy clients</h3>
-          <p>I worked with more than 5 clients. Client satisfaction is my main priority. I generally attempt to
-            complete the work
-            before the deadline.</p>
-        </div>
-        <div class="item">
-          <h2 class="number">1+</h2>
-          <h3 class="stats-sub-heading">Years experience</h3>
-          <p>I have 1 year of experience in this stuff and I started this all stuff when I was 11 y/o and currently I am 13 year old coder.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- END Stats Section -->
-
-
-
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <h2 class="section-heading" data-outline="about">About</h2>
-      <div class="wrapper">
-        <div class="left">
-          <div class="card">
-            <div class="img">
-              <img src="./image/absolute-image.jpg" alt="">
-            </div>
-            <p class="card-desc">I am 12 Year old 👦 | Youngest Web Developer & Graphic Designer 💻🎨 | Founder of CodeINBlogs 👨‍💻 | Completed 400+ exercises on FreeCodeCamp 💪 | Coder & designer by Passion 🔥 | 🌟 Proud core team member of GDG Ludhiana! | 7th Grade student of Noble International School 🎓 | Doing something Creative and Innovative.</p>
-            <h3 class="card-name">Anshul Soni</h3>
-            <p class="card-sub-title">Founder of CodeINBlogs</p>
-          </div>
-        </div>
-        <div class="right">
-          <p class="subheading">Hi! This is Anshul</p>
-          <h2 class="slogan">Web Developer & Graphic Designer</h2>
-          <p class="right-text"> I'm Anshul Soni, a 12-year-old web developer and graphic designer. Started coding at 11 and got hooked on tech's magic. Juggling studies at Noble International School and my tech passion. Founder of CodeINBlogs—where coders unite to blog and solve. Love making YouTube videos and rocking with Google Developer Groups. Open source? I'm in! 12+ months of web dev experience, ready for new projects. Let's team up—reach me at anshulsoni2022@gmail.com. Cheers to coding adventures!
-          </p>
-          <div class="buttons">
-            <a href="https://github.com/anshulsoni2010" class="primary-btn" download=""><i class="fa-brands fa-github"></i>
-              Checkout My GitHub</a>
-            <a href="./contact.html" class="primary-btn outline">Hire Me <i class="fa-solid fa-right-to-bracket"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- projects -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-heading" data-outline="Projects">Projects</h2>
-      <div class="all-items">
-        <div class="item">
-          <div class="left">
-            <div class="img">
-              <img src="./image/project-1.png" alt="">
-            </div>
-          </div>
-          <div class="right">
-            <h2 class="project-title">Sumit Gupta Classes</h2>
-            <h3 class="project-sub-title">Maths Coaching Website</h3>
-            <p class="project-desc">I made this website for a my Client. This application is truly Amazing.In this website I showcased all about the Maths Coaching from about us to courses to admissions and a many more</p>
-            <div class="buttons">
-              <a href="https://github.com/anshulsoni2010/SumitGuptaClasses" class="primary-btn"><i class="fa-brands fa-github"></i> GitHub Code</a>
-              <a href="https://anshulsoni2010.github.io/SumitGuptaClasses/" class="primary-btn outline external-link"> <span>Preview</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-          </div>
-        </div>
-        <div class="item">
-          <div class="left">
-            <div class="img">
-              <img src="./image/project-2.jpg" alt="">
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h3 class="home__greeting">Hello, I'm</h2>
+                        <h1 class="home__name">Anshul Soni</h1>
+                        <h2 class="home__education">Youngest Full Stack Developer & Entreprenuer
+                    </h3>
+
+                    <div class="home__button">
+                        <a download="" href="" class="button button--ghost">
+                            Work with Me </a>
+
+                        <a href="#about" class="button">About</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="assets/img/profile.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://twitter.com/anshulsoni2010" target="_blank" class="home__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="https://github.com/anshulsoni2010" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://instagram.com/anshulsoni2010" target="_blank" class="home__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
             </div>
-          </div>
-          <div class="right">
-            <h2 class="project-title">Omnifood Clone </h2>
-            <h3 class="project-sub-title">Clone Page of Omnifood 
-            </h3>
-            <p class="project-desc">I made a something same website like omnifood. I used HTML CSS JS as I wants to make landing page . I taken inspiration from other website like Zomato , Swiggy etc etc.</p>
-            <div class="buttons">
-              <a href="https://github.com/anshulsoni2010/omnifood-clone" class="primary-btn"><i class="fa-brands fa-github"></i> GitHub Code</a>
-              <a href="https://omnifood-clone-as.netlify.app/" class="primary-btn outline external-link"> <span>Preview</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/About.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">1 Years +</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">50+ Projects</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Support</h3>
+                            <span class="about__subtitle">Online 24/7</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+
+                        I'm Anshul Soni, a 13-year-old entrepreneur and full-stack developer. Kicked off my coding
+                        journey at 11, now leading projects at SOS TECH SERVICES, contributing to open source, and
+                        building a vibrant community at CodeINBlogs. Devfest'23 speaker with a passion for pushing tech
+                        boundaries. With hands-on experience in numerous projects, I bring a wealth of creativity and
+                        precision to every endeavor. CodeINBlogs, the platform I founded, is more than just a hub; it's
+                        a dynamic ecosystem where coding enthusiasts, tech voices, and seasoned developers converge to
+                        explore, learn, and innovate. Let's connect and explore the exciting possibilities in tech!
+                    </p>
+
+                    <a href="#contact" class="button about__button-contact">Contact Me</a>
+                    <a href="github.com/anshulsoni2010" class="button button--ghost">
+                        Github </a>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="left">
-            <div class="img">
-              <img src="./image/project-3.jpg" alt="">
+        </section>
+
+
+        <!-- =============== SKILLS =============== -->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My Abilities</span>
+            <h2 class="section__title">My Experience</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Full Stack Development</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Javascript</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Tailwind CSS</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Node Js</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Express JS</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">PHP</h3>
+                                    <span class="skills__level">Basic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <h3 class="skills__title">UI UX & Graphic Designing</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Canva</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Adobe Illustrator
+                                    </h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Inkspace</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name"> Affinity Designer</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Figma</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Balsamiq</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Invision</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Zeplin</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section">
+            <span class="section__subtitle">My Services</span>
+            <h2 class="section__title">What I Offer</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">Web <br>Development</h3>
+
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Web Development</h3>
+
+                            <p class="services__modal-description">
+                                I build up the high performance website with blazing fast speed. Website with high
+                                performance can lead the visitor more. </p>
+                            Advanced Canva Expertise: I excel in utilizing Canva to create visually appealing and
+                            versatile designs, harnessing its full potential.
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        <strong>Crafting Responsive Designs:</strong> I specialize in creating visually
+                                        stunning and responsive web solutions that captivate audiences across devices.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        <strong>Utilizing Cutting-Edge Technologies:</strong> I leverage the latest
+                                        technologies such as React, Node.js, and Tailwind CSS to ensure modern and
+                                        dynamic websites.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        <strong>Ensuring Collaborative Development:</strong> I prioritize seamless
+                                        collaboration by using Git/Github for version control and efficient project
+                                        management.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        <strong>Designing User-Centric Interfaces:</strong> I focus on designing user
+                                        interfaces that prioritize usability and interactivity, enhancing the overall
+                                        user experience.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        <strong> Delivering Innovative Solutions:</strong> I bring ideas to life through
+                                        innovative solutions, seamlessly blending creativity with technical expertise.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">UI/UX <br> Designing</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">UI/UX Designing</h3>
+
+                            <p class="services__modal-description">
+                                I do ui/ux design for the website that assists website to get an outstanding look.
+                                Unique design creates an unique personality for websites.
+
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        <strong>Intermediate Figma Proficiency:</strong> I bring creativity and
+                                        functionality together using Figma to craft intuitive and visually appealing
+                                        user interfaces.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        <strong> Balsamiq Skills:</strong> With advanced skills in Balsamiq, I
+                                        efficiently translate ideas into wireframes, ensuring a solid foundation for
+                                        user-centric designs.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        <strong> Zeplin Expertise:</strong> Ensuring seamless collaboration between
+                                        design and development teams, I use Zeplin to bridge the gap and streamline the
+                                        design-to-code process.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        <strong> Crafting Engaging User Experiences:</strong> Whether it's Figma,
+                                        Balsamiq, InVision, or Zeplin, my focus is on delivering UI/UX designs that
+                                        enhance user experiences with creativity and precision.
+                                    </p>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Graphic <br> Designing</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                                
+                                
+                                
+
+                            <h3 class="services__modal-title">Graphic Designing</h3>
+
+                            <p class="services__modal-description">
+                                I design and develop the consumer products with creative ability and
+                                hands-on approach which stisfies the customers' and markets' needs and trends.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        <strong>Proficient in Adobe Illustrator:</strong> With advanced skills in Adobe Illustrator, I bring precision and creativity to graphic design projects.                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                      <strong>  Mastery of Inkscape:</strong> I navigate Inkscape proficiently, ensuring a seamless workflow and precise execution in graphic design.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        <strong> Expertise in Affinity Designer:</strong> Leveraging the capabilities of Affinity Designer, I bring a fresh and innovative approach to graphic design projects.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        <strong>Crafting Creative Designs:</strong> Whether it's Canva, Adobe Illustrator, Inkscape, or Affinity Designer, my focus is on delivering designs that stand out with creativity and impact. 
+                                    </p>
+                                </li>
+
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="right">
-            <h2 class="project-title">CodeINBlogs</h2>
-            <h3 class="project-sub-title">Blogging and Community Website</h3>
-            <p class="project-desc">CodeINBlogs is the platform for Blogger and coders. It's my NGO which I am running for developers. Currently we have 600+ members of Community.<p>
-            <div class="buttons">
-              <a href="https://github.com/codeinblogs-as/CodeINBlogs" class="primary-btn"><i class="fa-brands fa-github"></i> GitHub Code</a>
-              <a href="https://codeinblogs.co" class="primary-btn outline external-link"> <span>Preview</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Portfolio</span>
+            <h2 class="section__title">Recent Works</h2>
+
+            <!-- <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>All</span>
+                <span class=" work__item" data-filter='.web'>Web</span>
+                <span class=" work__item" data-filter='.UI UX'>UI UX</span>
+                <span class=" work__item" data-filter='.design'>Design</span>
+            </div> -->
+
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="assets/img/Project -1 .png" alt="" class="work__img">
+
+                    <h3 class="work__title">News Website</h3>
+
+                    <a href="https://news.codeinblogs.co/" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix UI UX">
+                    <img src="assets/img/Project -2.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Agency Website</h3>
+
+                    <a href="https://sostechservices.in" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix design">
+                    <img src="assets/img/Project -3.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Coaching Website</h3>
+
+                    <a href="https://sumitguptaclasses.com" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+                <div class="work__card mix design">
+                    <img src="assets/img/project-4.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Qr Code Generator</h3>
+
+                    <a href="https://anshulsoni2010.github.io/QR-Code-Generator/" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix design">
+                    <img src="assets/img/project-5.png" alt="" class="work__img">
+
+                    <h3 class="work__title">Product Page</h3>
+
+                    <a href="https://dsclang.com/" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
+            <center style="margin: 2%;" class="parent-noteline">
+                <p class="note-line a-jump-bounce
+                ">
+                    Note:
+                    I have a lot of design projects to showcase, but updating them takes time. Stay tuned for a glimpse into my work when I get a chance!</p>
+            </center>
+     
+   
+        </section>
 
-       <center> <button class="github-btn" role="button"><i class="fa-brands fa-square-github github-btn-icon"></i>  All Projects</button></center>
 
-      </div>
-    </div>
-  </section>
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <sapn class="section__subtitle">Get in touch</sapn>
+            <h3 class="section__title">Contact Me</h3>
 
-  <!-- Footer Section -->
-  <section id="footer">
-    <div class="container">
-      <footer>
-        <div class="col-1">
-          <div class="logo"><a href="#">
-              <img src="./image/light-logo.svg" alt="">
-            </a></div>
-          <p>Age, merely a digit in life's ledger, contrasts the unbridled realm of creativity, where boundaries cease to exist. Let your numbered days empower the limitless expanse of your imagination, defying the constraints of time.
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-info">Talk to me</h3>
 
-          </p>
-        </div>
-        <div class="col-2">
-          <h2 class="column-heading">Links</h2>
-          <ul>
-            <li><a href="./index.html#home">Home</a></li>
-            <li><a href="./index.html#about">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./index.html#Project">Project</a></li>
-            <li><a href="./index.html#testimonial">Testimonial</a></li>
-          </ul>
-        </div>
-        <div class="col-3">
-          <h2 class="column-heading">Contact Info</h2>
-          <ul>
-            <li><a href="#">anshulsoni2022@gmail.com</a></li>
-            <li><a href="#">+91 7357022722</a></li>
-            <li><a href="#">India</a></li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <h2 class="column-heading">Social </h2>
-          <ul>
-            <li><center><a href="https://github.com/anshulsoni2010"><i class="fa-brands fa-square-github"></i></a></center></li>
-            <li><center><a href="#"><i class="fa-brands fa-twitter"></i></a></center></li>
-            <li><center><a href="#"><i class="fa-brands fa-instagram"></i></a></center></li>
-          </ul>
-        </div>
-      </footer>
-    </div>
-  </section>
-  <section id="copyright">
-    <div class="container">
-      <p> &copy; Copyright 2023 Anshul Soni. All right Reserved</p>
-    </div>
-  </section>
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">anshulsoni2022@gmail.com</span>
 
-  <script src="./app.js"></script>
+                            <a href="mailto:example@domain.com" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">7357022722</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=+917357022722&text=Hey there!" target="_blank"
+                                class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-twitter contact__card-icon'></i>
+                            <h3 class="contact__card-title">Twitter</h3>
+                            <span class="contact__card-data">@anshulsoni2010</span>
+
+                            <a href="https://twitter.com/anshulsoni2010" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+
+                    <form action="https://formspree.io/f/mnqeqrwd" method="post" class="contact__form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag" >Name</label>
+                            <input type="text" placeholder="Enter name" autocomplete="off" name="Name" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="text" placeholder="Enter email" autocomplete="off" name="Mail" class="contact__form-input">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Message</label>
+                            <textarea name="" id="" cols="30" rows="10" name="Message" autocomplete="off" placeholder="Write your Message"
+                                class="contact__form-input "></textarea>
+                        </div>
+
+
+                        <button class="button" type="submit">
+                            Send Message
+                        </button>
+                    </form>
+
+                </div>
+
+        </section> 
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Anshul</h1>
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                
+                <li class="footer__social-item">
+                    <a href="https://twitter.com/anshulsoni2010" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://github.com/anshulsoni2010" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://instagram.com/anshulsoni2010" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; 2024. All rights reserved.
+                <br>
+                <strong>This Page is proudly made by Me.</strong>
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
