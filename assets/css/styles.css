@@ -1227,7 +1227,6 @@ body.light-theme {
  margin-top: 4%;
   width: 70%;
   height: 2px;
-  font-size:large;
   font-weight: 600;
   color:var(--first-color);
   background-size: cover;
@@ -1249,4 +1248,15 @@ body.light-theme {
 
 .a-jump-bounce {
   animation: jumpBounce 2s infinite;
+}
+
+.note-line {
+  font-size: 16px; /* Default font size */
+}
+
+@media only screen and (max-width: 768px) {
+  .note-line {
+      font-size: 14px; 
+      margin-bottom: 15%;
+  }
 }
