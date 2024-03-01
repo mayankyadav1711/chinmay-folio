@@ -231,3 +231,47 @@ sr.reveal(`.footer, footer__container`, {
   origin: "bottom",
   distance: "30px",
 });
+
+
+// OnClick Url's For The Link {footer}
+var GitHubUrl = () => {
+  window.open("https://Github.com/anshulsoni2010")
+}
+var InstagramUrl = () => {
+  window.open("https://instagram.com/anshulsoni2010")
+
+}
+var TwitterUrl = () => {
+  window.open("https://x.com/anshulsoni2010")
+  
+}
+
+// Onclick Url's For The Link {Projects}
+
+var SOSTechSevices = () =>{
+  window.open("https://sostechservices.in")
+}
+
+var News = () =>{
+  window.open("https://news.codeinblogs.co/")
+}
+var Coaching = () =>{
+  window.open("https://Sumitguptaclasses.com")
+}
+
+var LawProGPT = () => {
+  window.open("https://lawprogpt.com")
+}
+
+var DSCLang = () =>{
+  window.open("https://dsclang.com")
+
+}
+
+var CodeINBlogs = () =>{
+  window.open("https://codeinblogs.co")
+}
+
+var WhatsAppContact = () =>{
+  window.open("https://api.whatsapp.com/send?phone=+917357022722&text=Hey there!")
+}

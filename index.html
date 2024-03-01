@@ -21,7 +21,7 @@
     <!-- Page Title and Meta Description -->
     <title>Anshul Soni - Full Stack Developer & Entrepreneur</title>
     <meta name="description" content="Portfolio- Anshul Soni: 13-year-old entrepreneur & full-stack developer. Founder of CodeINBlogs. Passionate about pushing tech boundaries.">
-    <meta name="keywords" content="Anshul, Anshul Soni, CodeINBlogs, young developer, founder, entrepreneur, CodeINBlogs founder, anshulsoni, web development, UI/UX designing, graphic designing, full-stack developer, web developer, Full Stack Developer,Young Entrepreneur,CodeINBlogs Founder,Advanced Design, Website Designing, Creativity, Designs, Demo Projects, Graphic, Intermediate">
+    <meta name="keywords" content="Anshul, Anshul Soni, anshul soni 12-year-old linkedin, youngest coder of india, anshulsoni.in website, CodeINBlogs, young developer, founder, entrepreneur, CodeINBlogs founder, anshulsoni, web development, UI/UX designing, graphic designing, full-stack developer, web developer, Full Stack Developer,Young Entrepreneur,CodeINBlogs Founder,Advanced Design, Website Designing, Creativity, Designs, Demo Projects, Graphic, Intermediate">
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://anshulsoni.in">
     <meta property="og:type" content="website">
@@ -600,7 +600,7 @@
 
                     <h3 class="work__title">News Website</h3>
 
-                    <a href="https://news.codeinblogs.co/" class="work__button">
+                    <a onclick="News()" class="work__button">
                         Demo <i class='bx bx-right-arrow work__icon'></i>
                     </a>
                 </div>
@@ -610,7 +610,7 @@
 
                     <h3 class="work__title">Agency Website</h3>
 
-                    <a href="https://sostechservices.in" class="work__button">
+                    <a onclick="SOSTechSevices()" class="work__button">
                         Demo <i class='bx bx-right-arrow work__icon'></i>
                     </a>
                 </div>
@@ -620,7 +620,7 @@
 
                     <h3 class="work__title">Coaching Website</h3>
 
-                    <a href="https://sumitguptaclasses.com" class="work__button">
+                    <a onclick="Coaching()" class="work__button">
                         Demo <i class='bx bx-right-arrow work__icon'></i>
                     </a>
                 </div>
@@ -629,7 +629,7 @@
 
                     <h3 class="work__title">LawProGPT - Product</h3>
 
-                    <a href="https://lawprogpt.com" class="work__button">
+                    <a onclick="LawProGPT()" class="work__button">
                         Demo <i class='bx bx-right-arrow work__icon'></i>
                     </a>
                 </div>
@@ -639,7 +639,7 @@
 
                     <h3 class="work__title">DSC Language - Product</h3>
 
-                    <a href="https://dsclang.com/" class="work__button">
+                    <a onclick="DSCLang()" class="work__button">
                         Demo <i class='bx bx-right-arrow work__icon'></i>
                     </a>
                 </div>
@@ -648,7 +648,7 @@
 
                     <h3 class="work__title">CodeINBlogs - Product</h3>
 
-                    <a href="https://codeinblogs.co/" class="work__button">
+                    <a onclick="CodeINBlogs" class="work__button">
                         Demo <i class='bx bx-right-arrow work__icon'></i>
                     </a>
                 </div>
@@ -691,7 +691,7 @@
                             <h3 class="contact__card-title">Whatsapp</h3>
                             <span class="contact__card-data">7357022722</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=+917357022722&text=Hey there!" target="_blank"
+                            <a onclick="WhatsAppContact()" target="_blank"
                                 class="contact__button">
                                 Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
                             </a>
@@ -769,17 +769,17 @@
             <ul class="footer__social">
 
                 <li class="footer__social-item">
-                    <a href="https://twitter.com/anshulsoni2010" target="_blank" class="footer__social-link">
+                    <a onclick="TwitterUrl()" target="_blank" class="footer__social-link">
                         <i class='bx bxl-twitter footer__social-icon'></i>
                     </a>
                 </li>
                 <li class="footer__social-item">
-                    <a href="https://github.com/anshulsoni2010" target="_blank" class="footer__social-link">
+                    <a onclick="GitHubUrl()" target="_blank" class="footer__social-link">
                         <i class='bx bxl-github footer__social-icon'></i>
                     </a>
                 </li>
                 <li class="footer__social-item">
-                    <a href="https://instagram.com/anshulsoni2010" target="_blank" class="footer__social-link">
+                    <a onclick="InstagramUrl()" target="_blank" class="footer__social-link">
                         <i class='bx bxl-instagram footer__social-icon'></i>
                     </a>
                 </li>
@@ -793,13 +793,9 @@
         </div>
     </footer>
 
-    <!--=============== SCROLLREVEAL ===============-->
 
-    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--=============== SWIPER JS & SCROLLREVEAL {both code in one file} (scroll animation)===============-->
+    <script src="assets/js/scroll-animation.js"></script>
 
     <!--=============== MIXITUP FILTER ===============-->
     <script src="assets/js/mixitup.min.js"></script>
