@@ -248,8 +248,8 @@ var TwitterUrl = () => {
 
 // Onclick Url's For The Link {Projects}
 
-var SOSTechSevices = () =>{
-  window.open("https://sostechservices.in")
+var OpenPortfolio = () =>{
+  window.open("https://chinmay-dev.vercel.app")
 }
 
 var News = () =>{
