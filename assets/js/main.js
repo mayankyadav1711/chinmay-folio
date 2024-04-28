@@ -234,15 +234,15 @@ sr.reveal(`.footer, footer__container`, {
 
 
 // OnClick Url's For The Link {footer}
-var GitHubUrl = () => {
-  window.open("https://Github.com/anshulsoni2010")
+var LinkedInUrl = () => {
+  window.open("https://www.linkedin.com/in/chinmaysingh24")
 }
 var InstagramUrl = () => {
-  window.open("https://instagram.com/anshulsoni2010")
+  window.open("https://instagram.com/_chinmaysingh_")
 
 }
 var TwitterUrl = () => {
-  window.open("https://x.com/anshulsoni2010")
+  window.open("https://twitter.com/_chinmaysingh_")
   
 }
 
@@ -273,5 +273,5 @@ var CodeINBlogs = () =>{
 }
 
 var WhatsAppContact = () =>{
-  window.open("https://api.whatsapp.com/send?phone=+917357022722&text=Hey there!")
+  window.open("https://api.whatsapp.com/send?phone=+919586815516&text=Hey there!")
 }
