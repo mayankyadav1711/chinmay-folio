@@ -275,3 +275,7 @@ var CodeINBlogs = () =>{
 var WhatsAppContact = () =>{
   window.open("https://api.whatsapp.com/send?phone=+919586815516&text=Hey there!")
 }
+
+var OpenCalorifyAI = () =>{
+  window.open("https://calorify-ai.vercel.app/")
+}
