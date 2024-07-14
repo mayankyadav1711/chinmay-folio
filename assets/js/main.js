@@ -245,6 +245,10 @@ var TwitterUrl = () => {
   window.open("https://twitter.com/_chinmaysingh_")
   
 }
+var GitHubUrl = () => {
+  window.open("https://github.com/chinmaysinghh")
+  
+}
 
 // Onclick Url's For The Link {Projects}
 
@@ -278,4 +282,8 @@ var WhatsAppContact = () =>{
 
 var OpenCalorifyAI = () =>{
   window.open("https://calorify-ai.vercel.app/")
+}
+
+var OpenCarXpert = () =>{
+  window.open("https://car-xpert.vercel.app/")
 }
