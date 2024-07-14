@@ -562,34 +562,32 @@
                 </div>
 
                 <div class="contact__content">
-                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
 
-                    <form  method="post" class="contact__form">
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Name</label>
-                            <input type="text" placeholder="Enter name" autocomplete="off" name="Name"
-                                class="contact__form-input">
-                        </div>
+    <form action="https://formspree.io/f/mkgwgbov" method="POST" class="contact__form">
+        <div class="contact__form-div">
+            <label for="name" class="contact__form-tag">Name</label>
+            <input type="text" id="name" placeholder="Enter name" autocomplete="off" name="name" required
+                class="contact__form-input">
+        </div>
 
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Mail</label>
-                            <input type="text" placeholder="Enter email" autocomplete="off" name="Mail"
-                                class="contact__form-input">
-                        </div>
+        <div class="contact__form-div">
+            <label for="email" class="contact__form-tag">Mail</label>
+            <input type="email" id="email" placeholder="Enter email" autocomplete="off" name="email" required
+                class="contact__form-input">
+        </div>
 
-                        <div class="contact__form-div contact__form-area">
-                            <label for="" class="contact__form-tag">Message</label>
-                            <textarea name="" id="" cols="30" rows="10" name="Message" autocomplete="off"
-                                placeholder="Write your Message" class="contact__form-input "></textarea>
-                        </div>
+        <div class="contact__form-div contact__form-area">
+            <label for="message" class="contact__form-tag">Message</label>
+            <textarea id="message" cols="30" rows="10" name="message" autocomplete="off"
+                placeholder="Write your Message" required class="contact__form-input"></textarea>
+        </div>
 
-
-                        <button class="button" type="submit">
-                            Send Message
-                        </button>
-                    </form>
-
-                </div>
+        <button class="button" type="submit">
+            Send Message
+        </button>
+    </form>
+</div>
 
         </section>
     </main>
